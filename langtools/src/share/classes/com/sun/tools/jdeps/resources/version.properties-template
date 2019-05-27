@@ -1,0 +1,4 @@
+
+jdk=$(JDK_VERSION)
+full=$(FULL_VERSION)
+release=$(RELEASE)

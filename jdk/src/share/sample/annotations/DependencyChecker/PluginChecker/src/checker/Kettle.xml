@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<device>
+    <supportedModules>
+        <entry>
+            <key>DISPLAY</key>
+            <value>2</value>
+        </entry>
+        <entry>
+            <key>THERMOMETER</key>
+            <value>1</value>
+        </entry>
+        <entry>
+            <key>CLOCK</key>
+            <value>4</value>
+        </entry>
+    </supportedModules>
+</device>

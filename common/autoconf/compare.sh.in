@@ -1,0 +1,58 @@
+#!/bin/bash
+
+# This script is processed by configure before it's usable. It is run from
+# the root of the build directory.
+
+
+##########################################################################################
+# Substitutions from autoconf
+
+LEGACY_BUILD_DIR=@OPENJDK_TARGET_OS@-@OPENJDK_TARGET_CPU_LEGACY@
+
+OPENJDK_TARGET_OS="@OPENJDK_TARGET_OS@"
+OPENJDK_TARGET_CPU="@OPENJDK_TARGET_CPU@"
+
+AWK="@AWK@"
+CAT="@CAT@"
+CMP="@CMP@"
+CP="@CP@"
+CUT="@CUT@"
+DIFF="@DIFF@"
+DUMPBIN="@FIXPATH@ @DUMPBIN@"
+EXPR="@EXPR@"
+FILE="@FILE@"
+FIND="@FIND@"
+GREP="@GREP@"
+JAVAP="@FIXPATH@ @BOOT_JDK@/bin/javap"
+LDD="@LDD@"
+MKDIR="@MKDIR@"
+NAWK="@NAWK@"
+NM="@GNM@"
+OBJDUMP="@OBJDUMP@"
+OTOOL="@OTOOL@"
+PRINTF="@PRINTF@"
+READELF="@READELF@"
+RM="@RM@"
+SED="@SED@"
+SORT="@SORT@"
+STAT="@STAT@"
+STRIP="@POST_STRIP_CMD@"
+TEE="@TEE@"
+UNIQ="@UNIQ@"
+UNPACK200="@FIXPATH@ @BOOT_JDK@/bin/unpack200"
+UNZIP="@UNZIP@"
+
+SRC_ROOT="@SRC_ROOT@"
+
+if [ "$OPENJDK_TARGET_OS" = "windows" ]; then
+  PATH="@VS_PATH@"
+fi
+
+# Now locate the main script and run it.
+REAL_COMPARE_SCRIPT="$SRC_ROOT/common/bin/compare.sh"
+if [ ! -e "$REAL_COMPARE_SCRIPT" ]; then
+  echo "Error: Cannot locate compare script, it should have been in $REAL_COMPARE_SCRIPT"
+  exit 1
+fi
+
+. "$REAL_COMPARE_SCRIPT" "$@"

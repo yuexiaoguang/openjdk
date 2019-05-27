@@ -1,0 +1,23 @@
+/*
+ * reserved comment block
+ * DO NOT REMOVE OR ALTER!
+ */
+package com.sun.org.apache.xerces.internal.impl.dv;
+
+/**
+ * A runtime exception that's thrown if an error happens when the application
+ * tries to get a DV factory instance.
+ */
+public class DVFactoryException extends RuntimeException {
+
+    /** Serialization version. */
+    static final long serialVersionUID = -3738854697928682412L;
+
+    public DVFactoryException() {
+        super();
+    }
+
+    public DVFactoryException(String msg) {
+        super(msg);
+    }
+}

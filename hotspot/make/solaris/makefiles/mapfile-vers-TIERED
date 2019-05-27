@@ -1,0 +1,20 @@
+
+# Define public interface.
+
+SUNWprivate_1.1 {
+        global:
+                # Dtrace support
+                __1cJCodeCacheF_heap_;
+                __1cIUniverseO_collectedHeap_;
+                __1cGMethodG__vtbl_;
+                __1cHnmethodG__vtbl_;
+                __1cICodeBlobG__vtbl_;
+                __1cKBufferBlobG__vtbl_;
+                __1cLRuntimeStubG__vtbl_;
+                __1cNSafepointBlobG__vtbl_;
+                __1cSDeoptimizationBlobG__vtbl_;
+                __1cNExceptionBlobG__vtbl_;
+                __1cQUncommonTrapBlobG__vtbl_;
+
+		__JvmOffsets;
+};

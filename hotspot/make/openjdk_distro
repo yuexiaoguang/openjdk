@@ -1,0 +1,10 @@
+
+#
+# This file format must remain compatible with both
+# GNU Makefile and Microsoft nmake formats.
+#
+
+# Don't put quotes (fail windows build).
+HOTSPOT_VM_DISTRO=OpenJDK
+COMPANY_NAME=
+PRODUCT_NAME=OpenJDK

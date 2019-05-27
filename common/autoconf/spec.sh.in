@@ -1,0 +1,12 @@
+
+CAT="@CAT@"
+CD=cd
+CP="@CP@"
+DIFF="@DIFF@"
+ECHO="@ECHO@"
+FIND="@FIND@"
+GREP="@GREP@"
+RM="@RM@"
+SED="@SED@"
+
+POST_STRIP_CMD="@POST_STRIP_CMD@"

@@ -1,0 +1,4 @@
+#ifndef _D3DGRAPHICSDEVICE_H_
+#define _D3DGRAPHICSDEVICE_H_
+
+#endif /* _D3DGRAPHICSDEVICE_H_ */

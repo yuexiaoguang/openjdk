@@ -1,0 +1,10 @@
+
+#
+# This file format must remain compatible with both
+# GNU Makefile and Microsoft nmake formats.
+#
+
+# Don't put quotes (fail windows build).
+HOTSPOT_VM_DISTRO=Java HotSpot(TM)
+COMPANY_NAME=Sun Microsystems, Inc.
+PRODUCT_NAME=Java(TM) Platform SE

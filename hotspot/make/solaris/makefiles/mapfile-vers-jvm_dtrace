@@ -1,0 +1,12 @@
+
+# Define library interface for JVM-DTrace interface
+
+SUNWprivate_1.1 {
+        global:
+            jvm_attach;
+            jvm_get_last_error;
+            jvm_enable_dtprobes;
+            jvm_detach;
+        local:
+                *;
+};

@@ -1,0 +1,15 @@
+
+# Define library interface.
+
+SUNWprivate_1.1 {
+        global:
+            JVM_begin_signal_setting;
+            JVM_end_signal_setting;
+            JVM_get_libjsig_version;
+            JVM_get_signal_action;
+            sigaction;
+            signal;
+            sigset;
+        local:
+                *;
+};

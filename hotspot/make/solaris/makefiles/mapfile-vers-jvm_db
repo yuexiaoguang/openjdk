@@ -1,0 +1,13 @@
+
+# Define library interface.
+
+SUNWprivate_1.1 {
+        global:
+            Jagent_create;
+	    Jagent_destroy;
+	    Jframe_iter;
+	    #Jget_vframe;
+	    #Jlookup_by_regs;
+        local:
+                *;
+};
